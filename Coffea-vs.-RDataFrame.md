@@ -18,7 +18,7 @@ or:
 ```
 
 With the latter you'll have warnings due to edm format information not available:
- Warning in <TClass::Init>: no dictionary for class
+`Warning in <TClass::Init>: no dictionary for class ...`
 
 
 ## RDataFrame (C++)
