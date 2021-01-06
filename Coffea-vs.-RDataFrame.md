@@ -1,6 +1,6 @@
-### Setup
+# Setup
 
-# RDataFrame (Python)
+## RDataFrame (Python)
 
 To run the code using RDataFrame (RDF) you need ROOT > 6.22
 You can do the following:
@@ -20,6 +20,16 @@ or:
 With the latter you'll have warnings due to edm format information not available:
  Warning in <TClass::Init>: no dictionary for class
 
+
+## RDataFrame (C++)
+
+Compile application including ROOT libraries:
+
+```
+g++ makeHistogramsRDF.cpp -o makeHistogramsRDF `root-config --cflags` `root-config --libs`
+```
+
+and then run with `./makeHistogramsRDF`
 
 
 # Coffea
