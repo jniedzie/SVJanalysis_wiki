@@ -27,4 +27,4 @@ optional arguments:
                         Number of worker nodes (default=4)
 ```
 
-You can see an example in `runMakePreSelection.sh`.
+You can find an example in `runMakePreSelection.sh`.
