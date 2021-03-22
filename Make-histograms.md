@@ -4,7 +4,7 @@ You need to have Coffea installed in your Python setup. See here how to [create 
 ### Input ROOT files
 The input ROOT files from which to make histograms must/can have 2 trees:
 * `Events`: standard NTuple events tree (mandatory!)
-* `Cuts`: a tree with one branch `Efficiency`, having only one leaf, representing pre-selection efficiencies (optional)
+* `Cuts`: a tree with one branch `Efficiency`, having only one leaf, representing pre-selection efficiency (optional)
 
 ### Running
 Beside the input ROOT files, several files are needed for making histograms:
