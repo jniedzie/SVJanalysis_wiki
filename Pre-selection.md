@@ -28,3 +28,8 @@ optional arguments:
 ```
 
 You can find an example in `runMakePreSelection.sh`.
+
+### Output
+The output skimmed ROOT files have 2 trees:
+* `Events`: standard NTuple events tree
+* `Cuts`: a tree with one branch `Efficiency`, having only one leaf, representing pre-selection efficiencies
