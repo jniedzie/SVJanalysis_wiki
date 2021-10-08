@@ -39,6 +39,7 @@ The `objects.py` script defines object classes (e.g. `Jets`, `PfCands` etc...) t
 * variables
 * n
 * met for the Met class, jet for the Jet class etc...
+
 This is done by defining, for each input file type, the matching between input branch name and PFNanoAOD branch name and calling `make_ak_array_collection`.
 When the correspondence between input file and PFNanoAOD is not a simple renaming, specific code must be written.
 
