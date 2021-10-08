@@ -30,6 +30,18 @@ optional arguments:
 
 You can find an example in `runMakePreSelection.sh`.
 
+The pre-selections instructions are defined in `processorPreSelection.py`, in function `process`.
+In particular:
+* MET filters to apply are imported from `met_filters.py`, variable `met_filters`
+* The set of triggers from which an "or filter" is applied is imported from `triggers.py`, variable `selected_triggers.py`.
+
+The `objects.py` script defines object classes (e.g. `Jets`, `PfCands` etc...) that must define the following attributes:
+* variables
+* n
+* met for the Met class, jet for the Jet class etc...
+This is done by defining, for each input file type, the matching between input branch name and PFNanoAOD branch name and calling `make_ak_array_collection`.
+When the correspondence between input file and PFNanoAOD is not a simple renaming, specific code must be written.
+
 ### Output
 The output skimmed ROOT files have 3 trees:
 * `Events`: standard NTuple events tree
